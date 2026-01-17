@@ -33,7 +33,7 @@ export function LandingSection() {
 
   return (
     <section 
-      className="min-h-screen flex flex-col items-center justify-center px-4 py-8 relative overflow-hidden bg-cover bg-center bg-fixed"
+      className="min-h-screen flex flex-col items-center justify-center px-4 py-8 relative overflow-hidden bg-cover bg-center bg-scroll md:bg-fixed"
       style={{
         backgroundImage: 'url(/images/couple.png)',
       }}
