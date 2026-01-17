@@ -123,12 +123,13 @@ export default function App() {
   };
 
   return (
-    <div
-      className="min-h-screen bg-cover bg-center bg-scroll"
-      style={{
-        backgroundImage: 'url(/images/couple.png)',
-      }}
-    >
+    <div className="min-h-screen relative">
+      <div
+        className="fixed inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: 'url(/images/couple.png)' }}
+        aria-hidden="true"
+      />
+      <div className="relative z-10">
       {/* Heart Button - Left Side */}
       <motion.button
         onClick={handleHeartClick}
@@ -139,16 +140,17 @@ export default function App() {
         <Heart className="w-6 h-6 text-white fill-white" />
       </motion.button>
 
-      <MusicPlayer />
-      <LandingSection />
+        <MusicPlayer />
+        <LandingSection />
       
       {/* Frosted glass effect for all other sections */}
-      <div className="backdrop-blur-md bg-white/20">
-        <NamesSection />
-        <EventsSection />
-        <JourneySection />
-        <RsvpSection />
-        <LocationSection />
+        <div className="backdrop-blur-md bg-white/20">
+          <NamesSection />
+          <EventsSection />
+          <JourneySection />
+          <RsvpSection />
+          <LocationSection />
+        </div>
       </div>
     </div>
   );
