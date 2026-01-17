@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-peach-50: #fff5f0;
+  --color-peach-100: #ffe8db;
+  --color-peach-200: #ffd4c0;
+  --color-peach-300: #ffb899;
+  --color-peach-400: #ff9366;
+  --color-peach-500: #ff6b35;
+  
+  --font-elegant: 'Cormorant Garamond', serif;
+  --font-script: 'Alex Brush', cursive;
+  --font-decorative: 'Cinzel', serif;
+}
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Alex+Brush&family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    @apply text-gray-800;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-elegant);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff5f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #fb7185, #f472b6);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #f43f5e, #ec4899);
+}
