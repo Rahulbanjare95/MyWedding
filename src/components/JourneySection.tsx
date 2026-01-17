@@ -8,7 +8,7 @@ const journeyStories = [
     caption: 'We knew it was special from the start',
   },
   {
-    image: '/images/ourFirstEverFeelingOflove.jpg',
+    image: '/images/ourFirstEverFeelingOflove.PNG',
     title: 'Falling in Love!',
     caption: 'Laughter that brought us closer',
   },
