@@ -123,8 +123,8 @@ export default function App() {
   };
 
   return (
-    <div 
-      className="min-h-screen bg-cover bg-center bg-fixed"
+    <div
+      className="min-h-screen bg-cover bg-center bg-scroll"
       style={{
         backgroundImage: 'url(/images/couple.png)',
       }}
