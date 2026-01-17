@@ -9,11 +9,15 @@ This guide will help you set up Google Sheets integration for RSVP form submissi
 3. Name it "Wedding RSVPs"
 4. Create column headers in row 1:
    - A1: `Timestamp`
-   - B1: `Name`
-   - C1: `Email`
-   - D1: `Attending`
-   - E1: `Number of Guests`
-   - F1: `Message`
+   - B1: `Submission Time (IST)`
+   - C1: `Name`
+   - D1: `Phone`
+   - E1: `Attending`
+   - F1: `Attendance Days`
+   - G1: `Arrival Time`
+   - H1: `Attendance Info`
+   - I1: `Number of Guests`
+   - J1: `Message`
 
 ## Step 2: Create a Google Apps Script
 
@@ -30,9 +34,13 @@ function doPost(e) {
     // Append data to the sheet
     sheet.appendRow([
       data.timestamp,
+      data.submissionTimeIST,
       data.name,
-      data.email,
+      data.phone,
       data.attending,
+      data.attendanceDays,
+      data.arrivalTime,
+      data.attendanceInfo,
       data.guests,
       data.message
     ]);
@@ -56,14 +64,14 @@ function doPost(e) {
    - Execute as: (Your email/account)
    - Who has access: **Anyone**
 7. Click **Deploy**
-8. Copy the deployment URL (looks like: `https://script.google.com/macros/s/YOUR_SCRIPT_ID/useless?e=no&stripSet=false`)
+8. Copy the deployment URL (looks like: `https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec`)
 
 ## Step 3: Update the React Component
 
 1. Open `/src/components/RsvpSection.tsx`
 2. Find this line (around line 30):
    ```javascript
-   const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/d/YOUR_SCRIPT_ID/useless?e=no&stripset=false';
+   const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec';
    ```
 3. Replace `YOUR_SCRIPT_ID` with the deployment URL from Step 2
 
@@ -90,4 +98,3 @@ If you get CORS errors, make sure:
 Refer to Google's official documentation:
 - [Apps Script Documentation](https://developers.google.com/apps-script)
 - [Google Sheets API](https://developers.google.com/sheets/api)
-

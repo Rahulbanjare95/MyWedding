@@ -126,7 +126,7 @@ export function RsvpSection() {
 
     // Google Apps Script Web App URL
     // Replace with your actual Google Apps Script deployment URL
-    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxuuIz8LUDcyq7YmZhJj5YoPlrIB87JdONu-ilrrMJ0runYQSZFh1QjEj12sGvAGdlH/exec';
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxbIfXn040Zkt11l0fzkKcLcAGrrDLUi8BiQYl-tFbahEh-nQGKnLviO3si-WtfwSJA/exec';
 
     // Get current time in Indian timezone
     const submissionTimeIST = getIndianTime();

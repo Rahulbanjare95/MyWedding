@@ -4,23 +4,23 @@ import { motion } from 'motion/react';
 const journeyStories = [
    {
     image: '/images/ourFirstDate.png',
-    title: 'Our First Date',
+    title: 'Our 1st Coffee!',
     caption: 'We knew it was special from the start',
   },
   {
     image: '/images/ourFirstEverFeelingOflove.jpg',
-    title: 'Falling in Love',
+    title: 'Falling in Love!',
     caption: 'Laughter that brought us closer',
   },
   {
     image: '/images/we-were-tied-forever.jpg',
-    title: 'We got Rokafied',
-    caption: 'On the day we promised forever',
+    title: 'Stepping into Forever!',
+    caption: 'We got rokafied and sealed our bond',
   },
   {
     image: '/images/ourLastTripMemories.png',
-    title: 'Our last trip memories',
-    caption: 'Our love became stronger with each passing day',
+    title: 'The Bombae Ishq!',
+    caption: 'Where our story began and still blooms',
   },
 ];
 
