@@ -53,7 +53,7 @@ export function LandingSection() {
       {/* Decorative gradient orbs */}
      
       {/* Main Heading Section */}
-      <h1 className="heading-main text-center leading-tight -mt 10 md:-mt-12">
+      <h1 className="heading-main text-center leading-tight -mt-10 md:-mt-12">
   <span style={{ fontFamily: 'var(--font-elegant)' }}>
     Rahul ♥ Hemanshi
   </span>
