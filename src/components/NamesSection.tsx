@@ -72,7 +72,7 @@ export function NamesSection() {
               <div className="w-full h-48 md:h-44 bg-gradient-to-br from-rose-200 to-pink-200 flex items-center justify-center text-gray-600 overflow-hidden">
                 <img 
                   src="/images/deshlahra.png" 
-                  alt="Deshlahra Family" 
+                  alt="Deshlahara Family" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     (e.target as HTMLImageElement).style.display = 'none';
@@ -82,7 +82,7 @@ export function NamesSection() {
               {/* Family Name */}
               <div className="p-6 text-center">
                 <h3 className="text-2xl md:text-3xl text-rose-700 font-semibold" style={{ fontFamily: 'var(--font-elegant)' }}>
-                  Deshlahra Family
+                  Deshlahara Family
                 </h3>
               </div>
             </motion.div>
