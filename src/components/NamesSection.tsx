@@ -71,7 +71,7 @@ export function NamesSection() {
               {/* Image Placeholder */}
               <div className="w-full h-48 md:h-44 bg-gradient-to-br from-rose-200 to-pink-200 flex items-center justify-center text-gray-600 overflow-hidden">
                 <img 
-                  src="/images/deshlahra-family.png" 
+                  src="/images/deshlahra.png" 
                   alt="Deshlahra Family" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
