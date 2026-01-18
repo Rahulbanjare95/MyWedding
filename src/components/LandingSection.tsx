@@ -55,11 +55,11 @@ export function LandingSection() {
       {/* Main Heading Section */}
       <h1 className="heading-main text-center leading-tight -mt 10 md:-mt-12">
   <span style={{ fontFamily: 'var(--font-elegant)' }}>
-    Rahul &amp; Hemanshi
+    Rahul ♥ Hemanshi
   </span>
   <br />
   <span className="text-base md:text-xl text-gray-700 tracking-wide" style={{ fontFamily: 'var(--font-decorative)' }}>
-    are getting married
+    Forever Starts Here.
   </span>
 </h1>
 

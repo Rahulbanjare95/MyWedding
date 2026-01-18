@@ -18,7 +18,7 @@ export function NamesSection() {
               className="text-xl md:text-2xl text-gray-600 mb-4 tracking-wide px-4"
               style={{ fontFamily: 'var(--font-elegant)' }}
             >
-              Together with their families
+              Together with our families
             </motion.p>
             <motion.div
               className="h-0.5 w-32 md:w-40 bg-gradient-to-r from-transparent via-rose-400 to-transparent mx-auto"
@@ -105,7 +105,7 @@ export function NamesSection() {
               className="text-base md:text-lg text-gray-600"
               style={{ fontFamily: 'var(--font-elegant)' }}
             >
-              at the celebration of their union
+              at the celebration of our union
             </motion.p>
           </motion.div>
         </motion.div>
