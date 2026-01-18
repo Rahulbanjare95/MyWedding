@@ -13,15 +13,14 @@ const journeyStories = [
     caption: 'Laughter that brought us closer',
   },
   {
-    image: '/images/we-were-tied-forever.jpg',
-    title: 'Stepping into Forever!',
-    caption: 'We got rokafied and sealed our bond',
-  },
-  {
     image: '/images/ourLastTripMemories.png',
     title: 'The Bombae Ishq!',
     caption: 'Where our story began and still blooms',
-  },
+  },{
+    image: '/images/we-were-tied-forever.jpg',
+    title: 'Stepping into Forever!',
+    caption: 'We got rokafied and sealed our bond',
+  }
 ];
 
 export function JourneySection() {
