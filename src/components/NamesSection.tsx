@@ -73,7 +73,7 @@ export function NamesSection() {
                 <img 
                   src="/images/deshlahara (1).jpeg" 
                   alt="Deshlahara Family" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                   onError={(e) => {
                     (e.target as HTMLImageElement).style.display = 'none';
                   }}
