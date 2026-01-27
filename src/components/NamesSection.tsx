@@ -43,7 +43,7 @@ export function NamesSection() {
               {/* Image Placeholder */}
               <div className="w-full bg-gradient-to-br from-rose-200 to-pink-200 flex items-center justify-center text-gray-600 overflow-hidden">
   <img 
-    src="/images/deshlahara (1).jpeg" 
+    src="/images/banjare-family.jpeg" 
     alt="Deshlahara Family" 
     className="w-full h-auto" // h-auto lets the height scale naturally
     onError={(e) => {
