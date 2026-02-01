@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 
 export function NamesSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-12 md:py-20 relative overflow-hidden">
+    <section className="min-h-[70vh] md:min-h-screen flex items-center justify-center px-4 py-6 md:py-20 relative overflow-hidden">
       {/* Indian Decorative Elements */}
    
       <div className="max-w-5xl mx-auto text-center relative z-10 w-full">
@@ -13,7 +13,7 @@ export function NamesSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="mb-8 md:mb-12">
+          <div className="mb-5 md:mb-12">
             <motion.p
               className="text-xl md:text-2xl text-gray-600 mb-4 tracking-wide px-4"
               style={{ fontFamily: 'var(--font-elegant)' }}
@@ -30,10 +30,10 @@ export function NamesSection() {
           </div>
 
           {/* Family Cards Container */}
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-6 md:gap-8 mb-8 md:mb-12">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-4 md:gap-8 mb-6 md:mb-12">
             {/* Banjare Family Card */}
             <motion.div
-              className="w-full sm:w-60 md:w-56 rounded-2xl overflow-hidden bg-white/40 border border-white/20 shadow-lg hover:shadow-xl transition-shadow"
+              className="w-full max-w-[220px] sm:w-56 md:w-56 rounded-2xl overflow-hidden bg-white/40 border border-white/20 shadow-lg hover:shadow-xl transition-shadow"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -41,19 +41,19 @@ export function NamesSection() {
               whileHover={{ y: -5 }}
             >
               {/* Image Placeholder */}
-              <div className="w-full bg-gradient-to-br from-rose-200 to-pink-200 flex items-center justify-center text-gray-600 overflow-hidden">
+              <div className="w-full h-32 sm:h-36 md:h-40 bg-gradient-to-br from-rose-200 to-pink-200 flex items-center justify-center text-gray-600 overflow-hidden">
   <img 
     src="/images/banjare-family.jpeg" 
     alt="Banjare Family" 
-    className="w-full h-auto" // h-auto lets the height scale naturally
+    className="w-full h-full object-cover object-[50%_30%]"
     onError={(e) => {
       (e.target as HTMLImageElement).style.display = 'none';
     }}
   />
 </div>
               {/* Family Name */}
-              <div className="p-6 text-center">
-                <h3 className="text-2xl md:text-3xl text-rose-700 font-semibold" style={{ fontFamily: 'var(--font-elegant)' }}>
+              <div className="p-4 text-center">
+                <h3 className="text-xl md:text-2xl text-rose-700 font-semibold" style={{ fontFamily: 'var(--font-elegant)' }}>
                   Banjare Family
                 </h3>
               </div>
@@ -61,7 +61,7 @@ export function NamesSection() {
 
             {/* Deshlahra Family Card */}
             <motion.div
-              className="w-full sm:w-60 md:w-56 rounded-2xl overflow-hidden bg-white/40 border border-white/20 shadow-lg hover:shadow-xl transition-shadow"
+              className="w-full max-w-[220px] sm:w-56 md:w-56 rounded-2xl overflow-hidden bg-white/40 border border-white/20 shadow-lg hover:shadow-xl transition-shadow"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -69,11 +69,29 @@ export function NamesSection() {
               whileHover={{ y: -5 }}
             >
               {/* Image Placeholder */}
-               <div className="w-full bg-gradient-to-br from-rose-200 to-pink-200 flex items-center justify-center text-gray-600 overflow-hidden">
+               <div className="w-full h-32 sm:h-36 md:h-40 bg-gradient-to-br from-rose-200 to-pink-200 flex items-center justify-center text-gray-600 overflow-hidden">
   <img 
     src="/images/deshlahara (1).jpeg" 
     alt="Deshlahara Family" 
-    className="w-full h-auto" // h-auto lets the height scale naturally
+    className="w-full h-full object-cover object-[50%_10%]  [vite] Internal server error: /Users/rahulbanjare/Downloads/wedding1/src/App.tsx: Expected corresponding JSX closing tag for <motion.div>. (190:6)
+
+  188 |           <LocationSection />
+  189 |         </div>
+> 190 |       </div>
+      |       ^
+  191 |     </div>
+  192 |   );
+  193 | }
+  Plugin: vite:react-babel
+  File: /Users/rahulbanjare/Downloads/wedding1/src/App.tsx:190:6
+  188|            <LocationSection />
+  189|          </div>
+  190|        </div>
+     |        ^
+  191|      </div>
+  192|    );
+      at constructor (/Users/rahulbanjare/Downloads/wedding1/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/Users/rahulbanjare/Downloads/wedding1/node_modules/@babel/parser/lib/index.js:6599:19)"
     onError={(e) => {
       (e.target as HTMLImageElement).style.display = 'none';
     }}
@@ -81,8 +99,8 @@ export function NamesSection() {
 </div>
               
               {/* Family Name */}
-              <div className="p-6 text-center">
-                <h3 className="text-2xl md:text-3xl text-rose-700 font-semibold" style={{ fontFamily: 'var(--font-elegant)' }}>
+              <div className="p-4 text-center">
+                <h3 className="text-xl md:text-2xl text-rose-700 font-semibold" style={{ fontFamily: 'var(--font-elegant)' }}>
                   Deshlahara Family
                 </h3>
               </div>
