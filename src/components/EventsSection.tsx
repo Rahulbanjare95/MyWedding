@@ -8,14 +8,14 @@ const timelineEvents = [
     date: '2026',
     events: [
       {
-        title: 'Haldi / Carnival',
-        time: '1:00 PM Onwards',
+        title: 'Floral Haldi',
+        time: '1:00 PM',
         description: 'Haldi glow, music, and fun games, Laughs all around!',
         
       },
       {
         title: 'Engagement / Sangeet',
-        time: '8:00 PM Onwards',
+        time: '7:00 PM',
         description: 'Rings Exchanged, Dance Floor Ignited. Show your moves!',
         
       },
@@ -107,8 +107,6 @@ export function EventsSection() {
         </motion.div>
         <p className="text-sm text-gray-500">{dayEvents.date}</p>
       </div>
-
-      {/* Vertical Timeline */}
       <div className="relative pl-6">
         {/* Vertical Line */}
         <div className="absolute left-1.5 top-0 bottom-0 w-1 bg-gradient-to-b from-rose-300 to-rose-200" />
@@ -150,7 +148,6 @@ export function EventsSection() {
 
                     <p className="text-xs text-gray-600 mb-2">{event.description}</p>
 
-                   
                   </div>
                 </div>
               </motion.div>
