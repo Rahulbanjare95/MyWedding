@@ -231,7 +231,7 @@ export function RsvpSection() {
   };
 
   return (
-    <section className="py-12 md:py-20 px-4 relative overflow-hidden">
+    <section id="rsvp-section" className="py-12 md:py-20 px-4 relative overflow-hidden">
       {/* Indian Decorative Elements */}
       
       <div className="max-w-3xl mx-auto relative z-10">

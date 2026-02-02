@@ -46,7 +46,7 @@ const timelineEvents = [
 
 export function EventsSection() {
   return (
-    <section className="py-12 md:py-20 px-4 relative overflow-hidden">
+    <section id="events-section" className="py-12 md:py-20 px-4 relative overflow-hidden">
       {/* Indian Decorative Elements */}
      
 

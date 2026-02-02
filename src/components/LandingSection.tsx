@@ -103,12 +103,17 @@ export function LandingSection() {
 
         {/* Scroll indicator */}
         <div className="mt-6 md:mt-16">
-          <div className="w-6 h-10 border-2 border-rose-300 rounded-full flex justify-center mx-auto">
-        <motion.div
-          className="w-1.5 h-2 bg-rose-400 rounded-full mt-2"
-          animate={{ y: [0, 12, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-        />
+          <div className="flex flex-col items-center gap-2">
+            <span className="text-xs text-gray-500 uppercase tracking-wider" style={{ fontFamily: 'var(--font-decorative)' }}>
+              Swipe Up
+            </span>
+            <motion.div
+              className="text-4xl md:text-5xl text-rose-400 cursor-pointer"
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            >
+              ↑
+            </motion.div>
           </div>
         </div>
       </div>

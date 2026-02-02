@@ -7,7 +7,7 @@ export function LocationSection() {
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(venueAddress)}`;
 
   return (
-    <section className="py-12 md:py-20 px-4 relative overflow-hidden">
+    <section id="location-section" className="py-12 md:py-20 px-4 relative overflow-hidden">
       {/* Indian Decorative Elements */}
     
       <div className="max-w-6xl mx-auto relative z-10">

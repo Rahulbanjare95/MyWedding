@@ -25,7 +25,7 @@ const journeyStories = [
 
 export function JourneySection() {
   return (
-    <section className="py-12 md:py-20 px-4 relative overflow-hidden">
+    <section id="journey-section" className="py-12 md:py-20 px-4 relative overflow-hidden">
       {/* Indian Decorative Elements */}
      
       <div className="max-w-7xl mx-auto relative z-10">

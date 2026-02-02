@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 
 export function NamesSection() {
   return (
-    <section className="min-h-[70vh] md:min-h-screen flex items-center justify-center px-4 py-6 md:py-20 relative overflow-hidden">
+    <section id="names-section" className="min-h-[70vh] md:min-h-screen flex items-center justify-center px-4 py-6 md:py-20 relative overflow-hidden">
       {/* Indian Decorative Elements */}
    
       <div className="max-w-5xl mx-auto text-center relative z-10 w-full">
